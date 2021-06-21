@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-logo-marcas',
@@ -10,6 +11,7 @@ export class LogoMarcasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+    
+  }
 }

@@ -9,6 +9,7 @@ import { ImgMenuComponent } from './component/img-menu/img-menu.component';
 import { NavTabsComponent } from './component/nav-tabs/nav-tabs.component';
 import { LogoMarcasComponent } from './component/logo-marcas/logo-marcas.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { ProductCardsComponent } from './component/product-cards/product-cards.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './component/footer/footer.component';
     ImgMenuComponent,
     NavTabsComponent,
     LogoMarcasComponent,
-    FooterComponent
+    FooterComponent,
+    ProductCardsComponent
   ],
   imports: [
     BrowserModule

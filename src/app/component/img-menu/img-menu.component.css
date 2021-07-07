@@ -1,0 +1,36 @@
+*{
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+.album{
+    margin-top: 0px;
+}
+
+.card-body{
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0, -8px);
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+ }
+.card .card-img-top:hover{
+    /* transform: scale(1.2); */
+}
+.card-img-top{
+    height:auto;
+    transition: transform 1s; 
+}
+/* .card-body:hover{
+    margin-bottom: 50px;
+    opacity: 1;
+} */
+
+
+

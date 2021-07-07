@@ -1,20 +1,25 @@
-body {
-    padding-bottom: 20px;
-  }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
+*{
+  font-family: 'Work Sans', sans-serif;
+}
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
+.navbar, .dropdown-menu{
+  background-color:rgba(24, 240, 186, 1)!important ;
+}
+
+.navbar-light .navbar-nav .nav-link, .dropdown-item {
+  padding-right: 50px;
+  color: #fff!important;
+}
+.dropdown-menu{
+  border: 1px solid rgb(123 122 122 / 15%);
+}
+.navbar-nav{
+  font-size: 1.5rem;
+}
+.navbar-nav li a{
+  margin-top: 20px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color:rgba(255, 145, 0, 1);
+}

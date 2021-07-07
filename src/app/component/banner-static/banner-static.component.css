@@ -1,0 +1,38 @@
+*{
+    font-family: 'Akaya Kanadaka', cursive;
+    color: rgba(255, 145, 0, 1);
+    text-shadow: #444444c4 2px 2px 1px;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.text-vcenter h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.text-vcenter{
+    height: 450px;
+}
+
+/* additional sections */
+#home {
+    background: url(../../../assets/images/fondo-cachorros.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-position:50% 50px;
+    margin-top:96px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+

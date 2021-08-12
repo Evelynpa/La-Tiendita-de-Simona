@@ -12,7 +12,6 @@ import { FooterComponent } from './component/footer/footer.component';
 import { ProductCardsComponent } from './component/product-cards/product-cards.component';
 import { AppRoutingModule } from './app-routing.module';
 import { InicioComponent } from './component/inicio/inicio.component';
-import { PreguntaFrecuentesComponent } from './preguntas/pregunta-frecuentes/pregunta-frecuentes.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { PreguntaFrecuentesComponent } from './preguntas/pregunta-frecuentes/pre
     LogoMarcasComponent,
     FooterComponent,
     ProductCardsComponent,
-    InicioComponent,
-    PreguntaFrecuentesComponent
+    InicioComponent
   ],
   imports: [
     BrowserModule,

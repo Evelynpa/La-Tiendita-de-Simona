@@ -24,14 +24,7 @@ const routes: Routes = [
       { path: 'perros/higiene-salud', component: PerrosComponent },
       { path: 'perros/accesorios', component: PerrosComponent },
       { path: 'perros/ropa', component: PerrosComponent },
-      { path: 'perros/cama', component: PerrosComponent },
-
-      
-     /*  {
-        path: 'detalle',
-        loadChildren: () => import('./../detalle/detalle.module').then(m => m.DetalleModule)
-      }, */
-
+      { path: 'perros/cama', component: PerrosComponent }
      
     ],
     

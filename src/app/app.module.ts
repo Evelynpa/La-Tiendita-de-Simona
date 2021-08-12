@@ -10,6 +10,9 @@ import { NavTabsComponent } from './component/nav-tabs/nav-tabs.component';
 import { LogoMarcasComponent } from './component/logo-marcas/logo-marcas.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ProductCardsComponent } from './component/product-cards/product-cards.component';
+import { AppRoutingModule } from './app-routing.module';
+import { InicioComponent } from './component/inicio/inicio.component';
+import { PreguntaFrecuentesComponent } from './preguntas/pregunta-frecuentes/pregunta-frecuentes.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,15 @@ import { ProductCardsComponent } from './component/product-cards/product-cards.c
     NavTabsComponent,
     LogoMarcasComponent,
     FooterComponent,
-    ProductCardsComponent
+    ProductCardsComponent,
+    InicioComponent,
+    PreguntaFrecuentesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
+  exports: [NavBarComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

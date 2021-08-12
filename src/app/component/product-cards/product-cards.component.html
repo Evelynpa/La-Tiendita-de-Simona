@@ -3,13 +3,14 @@
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-        <div class="col" *ngFor="let lista of Productos" >
-          <div class="card" *ngIf="lista.esNuevo">
-            <div class="icono-nuevo" >Nuevo</div>
+        <div class="col" *ngFor="let lista of Productos" [style.display]="lista.esNuevo? 'block': 'none'">
+          <div class="card">
+            <div class="icono-nuevo">Nuevo</div>
             <img src="assets/images/{{lista.srcImg}}" class="card-img-top">
             <div class="card-body">
               <p class="card-text nombre">{{lista.nombre}}</p>
-              <p class="card-text">$ {{lista.precioActual}}</p>
+              <p class="card-text marca">{{lista.marca}}</p>
+              <p class="card-text precio">$ {{lista.precioActual}}</p>
             </div>
           </div>
         </div>

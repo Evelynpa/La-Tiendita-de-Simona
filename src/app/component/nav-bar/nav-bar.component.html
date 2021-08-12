@@ -3,8 +3,13 @@
     
     <div class="container-fluid">
      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-        aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler"
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarsExample10"
+        aria-controls="navbarsExample10" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -16,18 +21,18 @@
           </a></li> 
           <!-- Perros -->
           <li class="nav-item dropdown">
-            <a class="nav-link " href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown10">
-              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-              <li><a class="dropdown-item" href="#">Higiene y Salud</a></li>
-              <li><a class="dropdown-item" href="#">Accesorios</a></li>
-              <li><a class="dropdown-item" href="#">Ropa</a></li>
-              <li><a class="dropdown-item" href="#">Cama</a></li>
+            <a class="nav-link " routerLink="/productos/perros" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown10" >
+              <li><a class="dropdown-item" routerLink="/productos/perros/alimentos" (click)="getValue('alimento')">Alimentos</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/higiene-salud" (click)="getValue('Higiene y Salud')">Higiene y Salud</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/accesorios" (click)="getValue('Accesorios')">Accesorios</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/ropa" (click)="getValue('Ropa')">Ropa</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/cama" (click)="getValue('Cama')">Cama</a></li>
             </ul>
           </li>
           <!-- Gatos -->
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
+            <a class="nav-link" routerLink="/productos/gatos" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
               <li><a class="dropdown-item" href="#">Alimentos</a></li>
               <li><a class="dropdown-item" href="#">Higiene y Salud</a></li>
@@ -38,7 +43,7 @@
           </li>
           <!-- Aves -->
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Aves</a>
+            <a class="nav-link" routerLink="/productos/aves" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Aves</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
               <li><a class="dropdown-item" href="#">Alimentos</a></li>
               <li><a class="dropdown-item" href="#">Accesorios</a></li>
@@ -46,7 +51,7 @@
           </li>
           <!-- Peces -->
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peces</a>
+            <a class="nav-link" routerLink="/productos/peces" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peces</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
               <li><a class="dropdown-item" href="#">Alimentos</a></li>
               <li><a class="dropdown-item" href="#">Accesorios</a></li>
@@ -54,7 +59,7 @@
           </li>
           <!-- Roedores -->
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Roedores</a>
+            <a class="nav-link" routerLink="/productos/roedores" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Roedores</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
               <li><a class="dropdown-item" href="#">Alimentos</a></li>
               <li><a class="dropdown-item" href="#">Higiene y Salud</a></li>
@@ -62,14 +67,41 @@
               <li><a class="dropdown-item" href="#">Cama</a></li>
             </ul>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
-  <app-banner-static></app-banner-static>
-  <app-img-menu></app-img-menu>
-  <app-nav-tabs></app-nav-tabs>
-  <app-product-cards></app-product-cards>
-  <app-logo-marcas></app-logo-marcas>
-  <app-footer></app-footer>
+  
+  <!-- <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="assets/images/dog-1517090.svg" alt="" width="70" alt="">
+      </a>
+      <button class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarPrincipal"
+        aria-controls="navbarPrincipal"
+        aria-expanded="false"
+        aria-label="Toogle navigation"
+        >
+
+      <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Alimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Higiene y Salud</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cama</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav> -->
+  
 </main>

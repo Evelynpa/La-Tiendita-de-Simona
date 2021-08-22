@@ -10,7 +10,7 @@
 
 <div class="content" role="main">
   <app-nav-bar></app-nav-bar>
-  <router-outlet></router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
   <app-footer></app-footer>
   
 

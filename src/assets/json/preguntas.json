@@ -1,0 +1,33 @@
+[
+	{
+		"idPregunta":"1",
+		"pregunta":"¿Cómo comprar?",
+		"respuesta1":"Debes enviarnos el código y cantidad del producto que deseas a través de nuestro whatsaap +56935145089"
+	},
+	{
+		"idPregunta":"2",
+		"pregunta":"¿Cuántos días demora el despacho?",
+		"respuesta1":"Los despachos se realizan los días martes y viernes.",
+		"respuesta2":"Para pedidos del día martes, la agenda se cierra el lunes a las 20 hrs.",
+		"respuesta3":"Para pedidos del día viernes, la agenda se cierra el jueves a las 20 hrs."
+	},
+	{
+		"idPregunta":"3",
+		"pregunta":"¿Cuáles son los medios de pago disponible?",
+		"respuesta1":"Puedes pagar tus productos con los siguientes medios de pago: efectivo, transferencia, pago rut, tarjetas de débito y tarjetas de crédito."
+	},
+	{
+		"idPregunta":"4",
+		"pregunta":"¿En qué horario se realizan los despachos?",
+		"respuesta1":"Los despachos pueden realizarse dentro del día acordado (martes o viernes).",
+		"respuesta2":"Se acordará con cada cliente el horario a convenir para entregar el producto."
+	},
+	{
+		"idPregunta":"5",
+		"pregunta":"¿Tiene algún costo el despacho?",
+		"respuesta1":"Los costos de despachos son los siguientes: ",
+		"respuesta2":"En Sector larapinta (lampa) y centro de lampa, el costo es gratis.",
+		"respuesta3":"En Zona norte y centro de santiago, el costo es de $2.000.",
+		"respuesta4":"Para Otras comunas de santiago y regiones, se envia  a través de starken, y el costo es por pagar dependiendo del sector."
+	}
+]

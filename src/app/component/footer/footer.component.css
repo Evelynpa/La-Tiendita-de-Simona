@@ -1,7 +1,7 @@
 *{
     font-family: 'Akaya Kanadaka', cursive;
     margin: 0px;
-padding: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,3 +9,21 @@ padding: 0px;
     background-color: #000c09;
     color: #fff;
 }
+
+.btn-outline-light{
+   /*  border-color: #000000; */
+   padding: 5px;
+   padding-top: 5px;
+   padding-left: 6px; 
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   font-weight: bolder;
+   border: 2px solid #fff;
+}
+.fains{
+   padding-top: 6px;
+   padding-left: 5px; 
+}
+
+

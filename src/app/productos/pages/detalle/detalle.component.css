@@ -1,0 +1,22 @@
+.container{
+    margin-top: 100px;
+
+}
+
+.titulo{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-weight: bolder;
+}
+.precio{
+    color: #10fff4;
+}
+.zoom {
+    transition: all 1s ease; 
+}
+.zoom:hover {
+    transform: scale(1.1, 1.1);
+}
+.img-box {
+    /* width: 50%; */ /* responsive width - 50% of the page or parent container */
+    overflow: hidden;
+  }

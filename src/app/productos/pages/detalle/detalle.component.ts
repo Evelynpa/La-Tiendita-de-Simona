@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+
+import { Productos } from 'src/app/models/products';
+import { ProductosService } from 'src/app/productos.service';
+
+import listaProductos from '../../../../assets/json/productos.json';
 
 @Component({
   selector: 'app-detalle',
@@ -8,17 +13,24 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class DetalleComponent implements OnInit {
 
-  id='';
+  @Input() data: Productos;
+
+  producto: any[] = [];
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private _service: ProductosService
   ) {
-    this.id = this.route.snapshot.params.id;
+    /* this.id = this.route.snapshot.params.id;
+    this.producto = this._service.obtenerUnProducto(this.id); */
+    this.route.params.subscribe(params => {
+      console.log("params", params['id']);
+      this.producto = this._service.obtenerUnProducto(params['id']);
+      console.log("this.producto", this.producto);
+    })
   }
 
   ngOnInit(): void {
-    console.log("entro")
-    this.id = this.route.snapshot.paramMap.get('id');
   }
 
 }

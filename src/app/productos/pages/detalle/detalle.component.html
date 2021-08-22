@@ -1,10 +1,22 @@
-
-<div class="card" style="width: 18rem;">
-    
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="container">
+  <div class="row" *ngFor="let prod of producto">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="img-box">
+        <img src="../../../../assets/images/{{prod.srcImg}}" class="img-thumbnail zoom" alt="...">
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <p></p>
+      <h1 class="titulo">{{prod.nombre}}</h1>
+      <br>
+      <h1 class="precio">${{prod.precioActual}}</h1>
+      <br>
+      <hr>
+      <p>{{prod.descripcion}}</p>
+      <br>
+      <hr>
+      <p><span style="font-weight: bold;">Categoría:</span> {{prod.categoria}}</p>
     </div>
   </div>
-<p>detalle works!</p>
+</div>
+<br>

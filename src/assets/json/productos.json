@@ -26,7 +26,7 @@
       "animal": "Gato",
       "tipoProducto": "Nuevo",
       "esNuevo": true,
-      "marca": "Proplan",
+      "marca": "Proplan gato",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -42,7 +42,7 @@
       "animal": "Aves",
       "tipoProducto": "Nuevo",
       "esNuevo": true,
-      "marca": "Proplan",
+      "marca": "Proplan aves",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -58,7 +58,7 @@
       "animal": "Peces",
       "tipoProducto": "Nuevo",
       "esNuevo": true,
-      "marca": "Proplan",
+      "marca": "Proplan peces",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -74,7 +74,7 @@
       "animal": "Roedores",
       "tipoProducto": "Nuevo",
       "esNuevo": true,
-      "marca": "Proplan",
+      "marca": "Proplan roedores",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -90,7 +90,7 @@
       "animal": "Perro",
       "tipoProducto": "antiguo",
       "esNuevo": false,
-      "marca": "Brit Care",
+      "marca": "Brit Care perro",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -106,7 +106,7 @@
       "animal": "Gato",
       "tipoProducto": "antiguo",
       "esNuevo": false,
-      "marca": "Proplan",
+      "marca": "Proplan gatito",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -122,7 +122,7 @@
       "animal": "Aves",
       "tipoProducto": "antiguo",
       "esNuevo": false,
-      "marca": "Proplan",
+      "marca": "Proplan ave",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -138,7 +138,7 @@
       "animal": "Peces",
       "tipoProducto": "antiguo",
       "esNuevo": false,
-      "marca": "Proplan",
+      "marca": "Proplan pez",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -154,7 +154,7 @@
       "animal": "Roedores",
       "tipoProducto": "antiguo",
       "esNuevo": false,
-      "marca": "Proplan",
+      "marca": "Proplan roedor",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -170,7 +170,7 @@
       "animal": "Perro",
       "tipoProducto": "antiguo",
       "esNuevo": false,
-      "marca": "Proplan",
+      "marca": "Proplan perrito",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"
@@ -507,6 +507,22 @@
       "tipoProducto": "antiguo",
       "esNuevo": false,
       "marca": "Proplan",
+      "stock": "20",
+      "srcImg": "320.jpg",
+      "fecha": "2021-07-17 15:56:23"
+   },
+   {
+      "id": "33",
+      "nombre": "Cama Roedores",
+      "peso": "1kl",
+      "descripcion": "Cama Roedores",
+      "precioActual": "5000",
+      "precioAnterior": "4500",
+      "categoria": "Cama",
+      "animal": "Roedores",
+      "tipoProducto": "Nuevo",
+      "esNuevo": true,
+      "marca": "Cama roedores",
       "stock": "20",
       "srcImg": "320.jpg",
       "fecha": "2021-07-17 15:56:23"

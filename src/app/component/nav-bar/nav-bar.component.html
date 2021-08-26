@@ -15,56 +15,56 @@
 
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
         <ul class="navbar-nav">
-          <li style="height: 80px;padding: 10px;"> <a class="navbar-brand" href="#">
+          <li style="height: 80px;padding: 10px;"> <a class="navbar-brand" href="/">
             <img src="assets/images/dog-1517090.svg" alt="" width="70"
               height="70" class="rounded mx-auto d-block">
           </a></li> 
           <!-- Perros -->
           <li class="nav-item dropdown">
-            <a class="nav-link " routerLink="/productos/perros" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
+            <a class="nav-link " routerLink="/productos/perros" (click)="getValue('alimento', 'Perro')" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10" >
-              <li><a class="dropdown-item" routerLink="/productos/perros/alimentos" (click)="getValue('alimento')">Alimentos</a></li>
-              <li><a class="dropdown-item" routerLink="/productos/perros/higiene-salud" (click)="getValue('Higiene y Salud')">Higiene y Salud</a></li>
-              <li><a class="dropdown-item" routerLink="/productos/perros/accesorios" (click)="getValue('Accesorios')">Accesorios</a></li>
-              <li><a class="dropdown-item" routerLink="/productos/perros/ropa" (click)="getValue('Ropa')">Ropa</a></li>
-              <li><a class="dropdown-item" routerLink="/productos/perros/cama" (click)="getValue('Cama')">Cama</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/alimentos" (click)="getValue('alimento', 'Perro')">Alimentos</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/higiene-salud" (click)="getValue('Higiene y Salud', 'Perro')">Higiene y Salud</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/accesorios" (click)="getValue('Accesorios', 'Perro')">Accesorios</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/ropa" (click)="getValue('Ropa', 'Perro')">Ropa</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/perros/cama" (click)="getValue('Cama', 'Perro')">Cama</a></li>
             </ul>
           </li>
           <!-- Gatos -->
           <li class="nav-item dropdown">
-            <a class="nav-link" routerLink="/productos/gatos" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
+            <a class="nav-link" routerLink="/productos/gatos" (click)="getValue('alimento', 'Gato')" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
-              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-              <li><a class="dropdown-item" href="#">Higiene y Salud</a></li>
-              <li><a class="dropdown-item" href="#">Accesorios</a></li>
-              <li><a class="dropdown-item" href="#">Ropa</a></li>
-              <li><a class="dropdown-item" href="#">Cama</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/gatos/alimentos" (click)="getValue('alimento', 'Gato')">Alimentos</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/gatos/higiene-salud" (click)="getValue('Higiene y Salud', 'Gato')">Higiene y Salud</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/gatos/accesorios" (click)="getValue('Accesorios', 'Gato')">Accesorios</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/gatos/ropa" (click)="getValue('Ropa', 'Gato')">Ropa</a></li>
+              <li><a class="dropdown-item" routerLink="/productos/gatos/cama" (click)="getValue('Cama', 'Gato')">Cama</a></li>
             </ul>
           </li>
           <!-- Aves -->
           <li class="nav-item dropdown">
-            <a class="nav-link" routerLink="/productos/aves" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Aves</a>
+            <a class="nav-link" routerLink="/productos/aves" (click)="getValue('alimento', 'Aves')" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Aves</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
-              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/aves/alimentos" (click)="getValue('alimento', 'Aves')">Alimentos</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/aves/accesorios" (click)="getValue('Accesorios', 'Aves')">Accesorios</a></li>
             </ul>
           </li>
           <!-- Peces -->
           <li class="nav-item dropdown">
-            <a class="nav-link" routerLink="/productos/peces" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peces</a>
+            <a class="nav-link" routerLink="/productos/peces" (click)="getValue('alimento', 'Peces')" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peces</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
-              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/peces/alimentos" (click)="getValue('alimento', 'Peces')">Alimentos</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/peces/accesorios" (click)="getValue('Accesorios', 'Peces')">Accesorios</a></li>
             </ul>
           </li>
           <!-- Roedores -->
           <li class="nav-item dropdown">
-            <a class="nav-link" routerLink="/productos/roedores" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Roedores</a>
+            <a class="nav-link" routerLink="/productos/roedores" (click)="getValue('alimento', 'Roedores')" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Roedores</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown10">
-              <li><a class="dropdown-item" href="#">Alimentos</a></li>
-              <li><a class="dropdown-item" href="#">Higiene y Salud</a></li>
-              <li><a class="dropdown-item" href="#">Accesorios</a></li>
-              <li><a class="dropdown-item" href="#">Cama</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/roedores/alimentos" (click)="getValue('alimento', 'Roedores')">Alimentos</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/roedores/higiene-salud" (click)="getValue('Higiene y Salud', 'Roedores')">Higiene y Salud</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/roedores/accesorios" (click)="getValue('Accesorios', 'Roedores')">Accesorios</a></li>
+              <li><a class="dropdown-item"routerLink="/productos/roedores/cama" (click)="getValue('Cama', 'Roedores')">Cama</a></li>
             </ul>
           </li>
 
@@ -72,36 +72,4 @@
       </div>
     </div>
   </nav>
-  
-  <!-- <nav class="navbar navbar-expand-sm">
-    <div class="container-fluid">
-      <a href="#" class="navbar-brand">
-        <img src="assets/images/dog-1517090.svg" alt="" width="70" alt="">
-      </a>
-      <button class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarPrincipal"
-        aria-controls="navbarPrincipal"
-        aria-expanded="false"
-        aria-label="Toogle navigation"
-        >
-
-      <span class="navbar-toggler-icon"></span>
-
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarPrincipal">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Alimentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Higiene y Salud</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Cama</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </nav> -->
-  
 </main>

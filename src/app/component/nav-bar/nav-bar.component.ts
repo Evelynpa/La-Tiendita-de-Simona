@@ -9,10 +9,11 @@ import { ProductosService } from '../../productos.service'
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(private menuSevice: ProductosService ) {}
+  constructor(private menuSevice: ProductosService) {}
 
-  getValue(alimento: string){
+  getValue(alimento: string, categoria:string){
     this.menuSevice.datosMenu = alimento;
+    this.menuSevice.datosMenuCategoria = categoria;
   }
 
 

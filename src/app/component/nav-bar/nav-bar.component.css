@@ -1,25 +1,39 @@
-*{
+* {
   font-family: 'Work Sans', sans-serif;
 }
 
-.navbar, .dropdown-menu{
-  background-color:rgba(24, 240, 186, 1)!important ;
+.navbar, .dropdown-menu {
+  background-color: rgba(24, 240, 186, 1)!important;
 }
 
 .navbar-light .navbar-nav .nav-link, .dropdown-item {
   padding-right: 50px;
   color: #fff!important;
 }
-.dropdown-menu{
+
+.dropdown-menu {
   border: 1px solid rgb(123 122 122 / 15%);
 }
-.navbar-nav{
+
+.navbar-nav {
   font-size: 1.5rem;
 }
-.navbar-nav li a{
+
+.navbar-nav li a {
   margin-top: 20px;
 }
 
-.dropdown-item:focus, .dropdown-item:hover{
-  background-color:rgba(255, 145, 0, 1);
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: rgba(255, 145, 0, 1);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* nuevo */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
 }

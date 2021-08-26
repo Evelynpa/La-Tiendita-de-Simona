@@ -4,11 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ProductosRoutingModule } from './productos-routing.module'
 
-import { PerrosComponent } from './pages/perros/perros.component';
-import { GatosComponent } from './pages/gatos/gatos.component';
-import { AvesComponent } from './pages/aves/aves.component';
-import { PecesComponent } from './pages/peces/peces.component';
-import { RoedoresComponent } from './pages/roedores/roedores.component';
+import { ListaProductosComponent } from './pages/lista-productos/lista.productos.component';
 import { DetalleComponent } from './pages/detalle/detalle.component';
 import { RouterModule } from '@angular/router';
 
@@ -16,14 +12,14 @@ import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  declarations: [PerrosComponent, GatosComponent, AvesComponent, PecesComponent, RoedoresComponent, DetalleComponent],
+  declarations: [ListaProductosComponent, DetalleComponent],
   imports: [
     CommonModule,
     ProductosRoutingModule,
     FormsModule,
     RouterModule
   ],
-  exports:[PerrosComponent, GatosComponent, AvesComponent, PecesComponent, RoedoresComponent,
+  exports:[ListaProductosComponent,
     DetalleComponent,
     RouterModule
   ]

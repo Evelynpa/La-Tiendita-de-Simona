@@ -12,6 +12,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { ProductCardsComponent } from './component/product-cards/product-cards.component';
 import { AppRoutingModule } from './app-routing.module';
 import { InicioComponent } from './component/inicio/inicio.component';
+import { WhatsappComponent } from './component/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,14 @@ import { InicioComponent } from './component/inicio/inicio.component';
     LogoMarcasComponent,
     FooterComponent,
     ProductCardsComponent,
-    InicioComponent
+    InicioComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  exports: [NavBarComponent],
+  exports: [NavBarComponent, ImgMenuComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

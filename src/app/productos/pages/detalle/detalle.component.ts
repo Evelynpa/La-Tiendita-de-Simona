@@ -24,9 +24,7 @@ export class DetalleComponent implements OnInit {
     /* this.id = this.route.snapshot.params.id;
     this.producto = this._service.obtenerUnProducto(this.id); */
     this.route.params.subscribe(params => {
-      console.log("params", params['id']);
       this.producto = this._service.obtenerUnProducto(params['id']);
-      console.log("this.producto", this.producto);
     })
   }
 

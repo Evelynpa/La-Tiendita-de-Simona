@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductosService } from 'src/app/productos.service';
 
 @Component({
   selector: 'app-img-menu',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImgMenuComponent implements OnInit {
 
-  constructor() { }
+  id = '';
+
+  constructor(private route: ActivatedRoute, private menuService: ProductosService) {
+    console.log("this.id = this.route.snapshot.params.id", this.id = this.route.snapshot.params.id)
+    this.id = this.route.snapshot.params.id;
+
+  }
 
   ngOnInit(): void {
   }
 
+  getValueCategoria(categoria: string) {
+    //datosMenu//alimento
+    //.datosMenuCategoria//perro
+    this.menuService.datosMenu = categoria;
+  }
 }

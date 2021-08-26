@@ -1,12 +1,13 @@
 <div class="container">
-
+  <h1 class="tituloPreguntas">Preguntas Frecuentes</h1>
   <div class="accordion" id="accordionExample">
     <!--ngfor loop started for dynamic data -->
     <div class="accordion-item" *ngFor="let item of preguntas; let i = index">
       <h2 class="accordion-header" [id]="'heading'+i">
 
-        <button class="accordion-button" style="font-weight: bolder;" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse"
-          [attr.data-bs-target]="'#collapse'+i" aria-expanded="true" [attr.aria-controls]="'collapse'+i">
+        <button class="accordion-button" style="font-weight: bolder;" [ngClass]="{ 'collapsed': i != 0 }" type="button"
+          data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="true"
+          [attr.aria-controls]="'collapse'+i">
           {{item.pregunta}}
         </button>
       </h2>
@@ -15,9 +16,10 @@
         <div class="accordion-body">
           <p>{{item.respuesta1}}</p>
           <p>{{item.respuesta2}}</p>
-          <p>{{item.respuesta3}}</p> 
+          <p>{{item.respuesta3}}</p>
           <p>{{item.respuesta4}}</p>
         </div>
       </div>
     </div>
   </div>
+  <br>

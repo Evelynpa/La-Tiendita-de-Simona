@@ -1,7 +1,10 @@
 *{
     font-family: 'Akaya Kanadaka', cursive;
+    text-shadow: #444444c4 2px 2px 1px;
 }
-
+.card{
+    cursor: pointer;
+}
 .album{
     margin-top: 0px;
 }

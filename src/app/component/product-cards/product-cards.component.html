@@ -2,10 +2,13 @@
   <div class="album py-5 bg-light">
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
         <div class="col" *ngFor="let lista of Productos" [style.display]="lista.esNuevo? 'block': 'none'">
           <div class="card" routerLink="/productos/detalle/{{lista.id}}/{{lista.nombre}}">
-            <div class="icono-nuevo">Nuevo</div>
+            <!-- <div class="icono-nuevo">Nuevo</div> -->
+            <div class="box">
+              <div class="ribbon"><span>Nuevo</span></div>
+           </div>
             <img src="assets/images/{{lista.srcImg}}" class="card-img-top">
             <div class="card-body">
               <p class="card-text nombre">{{lista.nombre}}</p>

@@ -67,7 +67,14 @@ const routes: Routes = [
   { path: 'alimentos/:categoria', component: ListaProductosComponent , pathMatch: 'full'},
   { path: 'accesorios-entretencion/:categoria', component: ListaProductosComponent , pathMatch: 'full'},
   { path: 'ropa-cama/:categoria', component: ListaProductosComponent , pathMatch: 'full'},
-  { path: 'paseo-transporte/:categoria', component: ListaProductosComponent , pathMatch: 'full'}
+  { path: 'paseo-transporte/:categoria', component: ListaProductosComponent , pathMatch: 'full'},
+
+  {
+    path: '/perros/alimentos',
+    pathMatch: 'full',
+    component: ListaProductosComponent
+  }
+
 ]
 
 

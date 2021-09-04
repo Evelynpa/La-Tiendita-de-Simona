@@ -1,10 +1,11 @@
-*{
+* {
     font-family: 'Akaya Kanadaka', cursive;
     color: #10fff4;
     text-shadow: #444444c4 2px 2px 1px;
 }
 
 /* vertical-centered text */
+
 .text-vcenter {
     display: table-cell;
     text-align: center;
@@ -14,25 +15,66 @@
 .text-vcenter h1 {
     font-size: 4.5em;
     font-weight: 700;
-    margin: 0;
+    margin: 30px;
     padding: 0;
 }
-.text-vcenter{
+
+.text-vcenter {
     height: 450px;
 }
 
 /* additional sections */
+
 #home {
     background: url(../../../assets/images/job562-nunoon-05-g.jpg) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
     width: 100%;
-    background-position:50% -210px;
-    margin-top:96px;
+    background-position: 50% -210px;
+    margin-top: 120px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+@media only screen and (max-width: 1200px) {
+    .text-vcenter {
+        height: 300px;
+    }
+}
+
+#home {
+    margin-top: 96px;
+}
+
+@media only screen and (max-width: 992px) {
+    .text-vcenter {
+        height: 200px;
+    }
+}
+
+#home {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-vcenter {
+        height: 200px;
+    }
+    .text-vcenter h1 {
+        font-size: 3em;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .text-vcenter {
+        height: 200px;
+    }
+    .text-vcenter h1 {
+        font-size: 3em;
+        margin: 0px;
+    }
+}

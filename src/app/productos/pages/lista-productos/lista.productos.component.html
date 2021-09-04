@@ -37,9 +37,12 @@
             <div class="col" *ngFor="let lista of allProductos">
               
                 <div class="card" routerLink="/productos/perros/detalle/{{lista.id}}/{{lista.nombre}}">
-                  <div class="icono-nuevo" [style.visibility]="lista.esNuevo? 'visible': 'hidden'">
+                  <!-- <div class="icono-nuevo" [style.visibility]="lista.esNuevo? 'visible': 'hidden'">
                     {{lista.tipoProducto}}
-                  </div>
+                  </div> -->
+                  <div class="box" [style.visibility]="lista.esNuevo? 'visible': 'hidden'">
+                    <div class="ribbon"><span>{{lista.tipoProducto}}</span></div>
+                 </div>
                   <a  (click)="getValueProducto(lista.id)">
                   <img src="assets/images/{{lista.srcImg}}" class="card-img-top">
                 </a>

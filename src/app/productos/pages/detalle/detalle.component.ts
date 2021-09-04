@@ -19,13 +19,17 @@ export class DetalleComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private _service: ProductosService
+    private _service: ProductosService,
+    private router: Router
   ) {
     /* this.id = this.route.snapshot.params.id;
     this.producto = this._service.obtenerUnProducto(this.id); */
     this.route.params.subscribe(params => {
       this.producto = this._service.obtenerUnProducto(params['id']);
     })
+  }
+  goBack() {
+    this.router.navigate(['/productos/perros/alimentos']);
   }
 
   ngOnInit(): void {
